@@ -1,0 +1,99 @@
+.header__content {
+    background-image: url(https://lifesup.com.vn/wp-content/uploads/2020/08/section-bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    padding: 16px;
+    overflow: hidden;
+    height: 500px;
+}
+.header__content-column1{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 40%;
+    padding-top:32px;
+}
+.header__content-column2{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+// nmp
+
+.header__content-title {
+    font-weight: 700;
+    font-size: 80px;
+    text-align: left;
+    margin-bottom: 32px;;
+}
+.header__content-introduce {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 400;
+}
+.header__content-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 20px 30px 0px #21252914;
+    margin: 8px;
+    transition: 1s;
+
+}
+.header__content-item:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+.header__content-heading {
+    color: #00BDF5;
+    font-size: 69px;
+    font-weight: 600;
+}
+
+.spacer-inner {
+    width: 100%;
+    height:70px;
+}
+@media ( min-width: 1554px) {
+    .header__content-column2{
+        width: 60%;
+    }
+}
+@media ( min-width: 1644px) {
+    .header__content-column2{
+        width: 50%;
+    }
+}
+@media ( min-width: 1960px) {
+    .header__content-column2{
+        width: 80%;
+    }
+}
+
+@media ( max-width: 1028px) {
+    .header__content {
+        background-image: none;
+        display: block;
+        padding: 16px;
+        height:auto;
+    }
+    .header__content-item {
+        width: 100%;
+    }
+    .header__content-column1,
+    .header__content-column2{
+        width: 100%;
+    }
+}

@@ -1,0 +1,113 @@
+
+.background-color {
+    background-color: rgb(107, 213, 209, 0.1);
+    border-radius : 4px;
+    z-index: -99999;
+
+}
+.header__content {
+    background-image: url(https://lifesup.com.vn/wp-content/uploads/2020/08/section-bg.png);
+    background-position: right;
+    padding: 32px 16px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+
+
+}
+.header__content-column1{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    padding-top:32px;
+}
+.header__content-column2{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 36px 12px;
+
+}
+
+.header__content-title {
+    font-weight: 700;
+    font-size: 80px;
+    text-align: left;
+    margin-bottom: 32px;;
+}
+.header__content-introduce {
+    width: 100%;
+    font-size: 17px;
+}
+.header__content-parameter {
+    margin-top: 12px !important;   ;
+}
+.header__content-item1 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    width: 23.33%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 20px 30px rgba(33, 37, 41, 0.08);
+}
+.header__content-parameter {
+    font-size: 24px;
+    font-weight: 500;
+    list-style: bold;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 39px;
+    background-color: #00BDF5;
+    color: #ffffff;
+    border-radius: 4px;
+    margin: 18px 0;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:#0066ff
+}
+@media ( min-width: 1028px) {
+    .header__content-column2 :nth-child(2) {
+        margin-top: 64px;
+    }
+}
+@media ( max-width: 1028px) {
+    .header__content {
+        display: block;
+        height:auto;
+    }
+    .header__content-column1,
+    .header__content-column2 {
+        width: 100%;
+    }
+}
+@media ( max-width: 738px ) {
+    .header__content-column2{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+
+    }
+    .header__content-item1 {
+        padding: 12px;
+        margin: 12px 0;
+        width: 100%;
+        height: auto;
+    }
+    .header__content-column2:nth-child(2) {
+        margin-top: 0px;
+    }
+    .btn {
+        width: 100%;
+    }
+}

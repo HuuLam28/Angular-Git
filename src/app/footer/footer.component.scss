@@ -1,0 +1,46 @@
+
+.footer {
+    width: 100%;
+    background-color:#00222C ;
+    color: #fff;
+    padding-bottom: 56px;
+}
+.footer-app {
+    display: flex;
+    justify-content: space-between;
+    margin:12px;
+    
+}
+.footer__addresse-office {
+    margin: 32px 20px 20px 20px;
+}
+.footer__addresse-office span {
+    margin-left: 12px; 
+}
+.footer__addresse-office fa-icon {
+    color: #6BD5D1;
+}
+.footer__addresse-icons a {
+    border: 1px solid #fff;
+    padding: 12px 10px 12px 20px;
+    margin: 0px 12px  0 12px;
+    text-decoration: none;
+    color: #fff;
+}
+.footer__addresse-icons {
+    display: flex;
+    align-items: flex-start;
+}
+.footer__addresse-icons fa-icon {
+    font-size: 22px;
+    margin-right: 12px;
+    
+}
+.footer__addresse-detail {
+    margin: 32px 0 0 20px;
+}
+@media ( max-width: 738px ) {
+    .footer-app {
+        display: block;
+    }
+}

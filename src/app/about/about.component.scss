@@ -1,0 +1,20 @@
+
+.spacer-inner {
+    width: 100%;
+    height:70px;
+}
+.margin-60 {
+    margin: 0 140px;
+}
+@media(min-width: 1029px){
+    .header__menu-down {
+        // display: none;
+    }
+}
+.header__menu-down {
+    display: flex;
+    align-items: center;
+}
+.header__menu-down .menu-mobile fa-icon {
+    font-size: 28px;
+}

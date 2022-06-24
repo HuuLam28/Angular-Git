@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="footer__sub">
+        <div class="footer__sub-text">
+            <h4>{{title}}</h4>
+            <p>{{introduce}}</p>
+        </div>
+        <div class="footer__sub-img">
+            <img [src]="imgBGR" alt="">
+            <div style="width: 80px;height: 80px;right: 366px;bottom: 500px;background: #6BD5D1;opacity: 0.7;" class="colorBox"></div>
+            <div style="width: 44px;height: 44px;left: 110px;bottom: 263px;background: #6BD5D1;opacity: 0.7;" class="colorBox"></div>
+            <div style="width: 70px;height: 70px;left: 226px;top: 340px;background: #00BDF5;opacity: 0.7;" class="colorBox"></div>
+            <div style="width: 29px;height: 29px;right: 230px;top: 300px;background: #00BDF5;opacity: 0.7;" class="colorBox"></div>
+        </div>
+    </div>
+</div>
+<div class="spacer-inner"></div>
+
+<div class="background-color">
+    <div class="header__content">
+        <div class="header__content-column1">
+                <div class="header__content-title">{{title}}</div>
+                <div class="header__content-introduce">
+                    {{introduce}}
+                </div>
+            </div>
+                <div class=" header__content-column2">
+                    <div *ngFor= "let item of listItem" class="header__content-item1 ">
+                        <img [src]= item.img alt="">
+                        <div class="header__content-parameter">
+                            {{item.param}}
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>

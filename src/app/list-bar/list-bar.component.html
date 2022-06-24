@@ -1,0 +1,19 @@
+<div class="navbar-menu">
+    <ul class="navbar-menu__list" >
+      <li class="navbar-menu__item" [routerLink]="['/home']"> Home </li>
+      <li  [routerLink]="['/about']" class="navbar-menu__item">About Us</li>
+      <li class="navbar-menu__item"><a class ="navbar-menu__link" href="#Services">Sevirce</a></li>
+      <li class="navbar-menu__item"><a class ="navbar-menu__link" href="#Cases">Cases</a></li>
+      <li class="navbar-menu__item"><a class ="navbar-menu__link" href="#Block">Block</a></li>
+      <li class="navbar-menu__item"><a class ="navbar-menu__link" href="">Training</a></li>
+      <li class="navbar-menu__item"><a class ="navbar-menu__link" href="">Careers</a></li>
+      <li class="navbar-menu__item"><a class ="navbar-menu__link" href="">Contact Us</a></li>
+      <!-- <li *ngFor ="let item of listNav" class="navbar-menu__item">{{item.name}}</li> -->
+      <li *ngFor ="let Language of arrayLanguage; last as isLast; first as isFirst; even as isEven" [class.hover] = "isEven" [class.no-hover] = "isEven" [class.right-margin] = "!isLast" class="navbar-menu__language">{{Language.name }}
+      </li>
+    </ul>
+</div>
+
+<!-- [routerLink]="['/about']"
+  no-hover btn
+no-hover-->

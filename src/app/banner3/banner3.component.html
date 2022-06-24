@@ -1,0 +1,26 @@
+<div class="background-color">
+    <div class="header__content">
+        <div class="header__content-column1">
+                <div class="header__content-title">{{titleBanner3}}</div>
+                <!-- <div class=" rect-26c7f6-row2"></div>
+                <div class=" rect-6BD5D1-row3"></div> -->
+                <div class="header__content-introduce">
+                    {{introduceBanner3}}
+                </div>
+            </div>
+                <div class=" header__content-column2">
+                    <div *ngFor= "let item of  headerItem " class="header__content-item1 ">
+                        <img [src]= item.img alt="">
+                        <div class="header__content-parameter">
+                            {{item.para}}
+                        </div>
+                        <span>
+                            <div class="btn">{{btnBanner3}}</div>
+                        </span>
+                    </div>
+                </div>
+
+    </div>
+</div>
+
+

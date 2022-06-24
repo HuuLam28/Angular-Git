@@ -1,0 +1,16 @@
+<div class="content__title">
+    <h4>LIFES</h4>
+    <h4>UP</h4>
+    <h4>Member</h4>
+</div>
+<div class="content__introduce">
+    <div *ngFor="let member of userMember" class="list-detail">
+        <div class="list-detail__img">
+            <img  class= "item1" [src]= member.img alt="imga">
+        </div>
+        <div class="detail-description">
+            <h5>{{member.name}}</h5>
+            <span class="btn">{{member.position}}</span>
+        </div>
+    </div>
+</div>

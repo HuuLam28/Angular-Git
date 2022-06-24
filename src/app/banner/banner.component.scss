@@ -1,0 +1,40 @@
+.header__content {
+        background-image: url(https://lifesup.com.vn/wp-content/uploads/2020/08/Asset-1@3x-1.svg);
+        height: 500px;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 16px;
+        
+    };
+.header__content-title {
+    // font-size:36px;
+    font-weight: 700;
+    font-size: 80px;
+    width: 60%;
+}
+.header__content-description {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+
+}
+.header__content-description-item {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 12px;
+}
+.header__content-description-item fa-icon {
+    text-align: left;
+    font-size: 50px;
+}
+.header__content-description-item span {
+    font-size: 19px;
+    margin-top: 18px;
+
+}
+@media ( max-width: 1028px) {
+    .header__content {
+        height:auto;
+    }
+}

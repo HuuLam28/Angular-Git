@@ -1,0 +1,24 @@
+<div class="footer">
+    <div class="footer-app">
+        <app-brand></app-brand>
+        <div *ngFor="let office of offices"class="footer__addresse-office">
+            <fa-icon [icon]="office.icon"></fa-icon>
+            <span>{{office.contry}}</span>
+            <div class="footer__addresse-detail">
+                <p>{{office.address}}</p>
+                <p>{{office.email}}</p>
+                <p> {{office.HR}}</p>
+            </div>
+        </div>
+
+
+    <div class="footer__addresse-office">
+        <div  class="footer__addresse-icons">
+            <a *ngFor="let icon of iconLink" href="" class="footer__addresse-item"><fa-icon [icon]="icon.icon"></fa-icon></a>
+        </div>
+    </div>
+    </div>
+
+    <!-- <app-list-bar></app-list-bar> -->
+</div>
+

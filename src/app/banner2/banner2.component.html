@@ -1,0 +1,20 @@
+<div class="header__content">
+    <div class="header__content-column1">
+        <div class="header__content-title">{{titleBanner2}}</div>
+        <!-- <div class=" rect-26c7f6-row2"></div>
+        <div class=" rect-6BD5D1-row2"></div> -->
+        <div class="header__content-introduce">
+          {{intrducebanner2}}
+        </div>
+    </div>
+
+    <div class="header__content-column2">
+            <div *ngFor = "let item of arrItem" class="header__content-item">
+                <div class="header__content-heading">{{item.contentHeader}}</div>
+                <div class="header__content-parameter">{{item.contentPara}}</div>
+            </div>
+
+    </div>
+</div>
+
+

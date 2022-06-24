@@ -1,0 +1,92 @@
+.main-logo{
+    display:flex;
+   
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    margin: 12px 0;
+}
+.rectangle__size{
+    position: relative;
+    width: 48px;
+    height: 82px;
+    margin-top: 18px;
+  
+}
+.rectangle__size :nth-child(1){
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 3px;
+    left: 0px;
+    border-radius: 2px;
+    
+}
+.rectangle__size :nth-child(2){
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    bottom: 28px;
+    left: 5px ;
+    border-radius: 2px;
+}
+.rectangle__size :nth-child(3){
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    bottom: 32px;
+    right: 3px;
+    border-radius: 2px;
+}
+.rectangle__size :nth-child(4){
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 1px;
+    right: 3px;
+    border-radius: 2px;
+}
+.main-logo__contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-logo__contact-title{
+    display: flex;
+    font-size: 26px;
+}
+.main-logo__contact-title :first-child {
+    color: var(--text-lifes);
+}
+.main-logo__contact-title :last-child {
+    color: var(--text-up);
+}
+.main-logo__contact-sologan{
+    font-size: 12px;
+    
+}
+.rec-26c7f6{
+    background-color:rgba(0, 189, 245, 0.85);
+   
+
+}
+.rec-6BD5D1 {
+    background-color: rgba(107, 213, 209, 0.85);
+    
+    height:auto;
+
+}
+.main-logo__contact-title{
+    display: flex;
+    font-size: 26px;
+}
+.main-logo__contact-title :first-child {
+    color: #018e86 ;
+}
+.main-logo__contact-title :last-child {
+    color: #239fd2;
+}
+.main-logo__contact-sologan{
+    font-size: 12px;
+}

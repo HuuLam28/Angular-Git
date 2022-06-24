@@ -1,0 +1,19 @@
+<div class="header__content">
+    <div class="header__content-title">
+        {{titleBanner5}}
+    </div>
+    <div class="header__content-description">
+        <div class="header__content-list">
+            <div *ngFor = "let item of headerItem" class="header__content-item">
+                <img [src]= item.img class="header__content-img">
+                <div class="header__content-date">{{item.date}}</div>
+                <div class="header__content-detail">{{item.detail}}</div>
+                <span></span>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+

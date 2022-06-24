@@ -1,0 +1,124 @@
+@import '~swiper/css';
+@import '~swiper/css/navigation';
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  max-height: 300px;
+  // margin: 20px auto;
+}
+.swiper-pagination {
+  display: none;
+}
+
+.slide__item {
+  display: flex;
+  height: 80%;
+  max-width: 480px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgb(33 37 41 / 8%);
+  text-align: left !important;
+
+}
+.slide__item-icon > img {
+  max-width: inherit;
+  padding: 0 12px;
+}
+.slide__item-icon{
+  width: 40%;
+}
+.slide__item-body {
+  width: 60%;
+  padding: 12px;
+}
+.slide__item-capstion{
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  padding-bottom: 12px;
+}
+.slide__item-descrips{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 12px;
+
+}
+
+.slide__item-buttons{
+  display: flex;
+  align-items: flex-end;
+}
+.slide__item-buttons :nth-child(2) {
+  margin: 0 12px;
+}
+.btn-trans {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  color: #00BDF5;
+  border: 1px solid #00BDF5;
+  width: 30%;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 10px;
+}
+@media (max-width: 1340px) {
+  .slide__item-capstion{
+    font-weight: 400;
+    font-size: 18px;
+
+  }
+  .slide__item-descrips{
+
+    font-size: 12px;
+
+
+  }
+  .slide__item-body {
+    width: 100%;
+    padding: 8px;
+  }
+  .slide__item-icon{
+    width: 50%;
+  }
+}
+@media (max-width: 1029px) {
+  .swiper {
+    display: none;
+}
+}

@@ -1,0 +1,18 @@
+<div class="content__title">
+    <h4>LIFES</h4>
+    <h4>UP</h4>
+    <h4>Leadership</h4>
+</div>
+<div class="content__introduce">
+    <div *ngFor="let user of userLeader"class="list-detail">
+        <div class="list-detail__img">
+            <img  class= " imga" [src]= user.img alt="imga">
+        </div>
+        <div class="detail-description">
+            <h5>{{user.name}}</h5>
+            <span class="btn">{{user.position}}</span>
+            <p>{{user.detail}}</p>
+        </div>
+    </div>
+
+</div>

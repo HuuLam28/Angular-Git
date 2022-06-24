@@ -1,0 +1,149 @@
+.container {
+    margin: 0 10px;
+    overflow: hidden;
+    
+}
+
+.spacer-inner {
+    width: 100%;
+    height:70px;
+
+}
+.footer__sologan {
+    position: relative;
+}
+.footer__sologan::after {
+    content: "";
+    width: 100%;
+    height: 26px;
+    background-color: #00BDF5;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+.footer__sub{
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    background-color: rgba(4, 127, 121, 0.4);
+    display: flex;
+    justify-content: center;
+    
+}
+.footer__sub h4 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+}
+.footer__sub p {
+    font-size: 19px;
+    font-weight: 400;
+    color: #fff;
+
+}
+.footer__sub-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-shadow: 12px 12px 20px #000;
+}
+.footer__sub-img {
+   
+    mix-blend-mode: luminosity;
+    // opacity: 0.2;
+    object-fit: cover;
+    border-radius: 4px;
+    z-index: -1;
+    
+    
+}
+.header__content {
+    background-image: url(https://lifesup.com.vn/wp-content/uploads/2020/08/section-bg.png);
+    background-position: right;
+    padding: 32px 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: row; 
+    
+    
+}
+
+.colorBox {
+    position: absolute;
+    border-radius: 4px;
+}
+.header__content-column1{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    padding-top:32px;
+}
+.header__content-column2{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 36px 12px;
+    
+}
+
+.header__content-title {
+    font-weight: 700;
+    font-size: 80px;
+    text-align: left;
+    margin-bottom: 32px;;
+}
+.header__content-introduce {
+    width: 100%;
+    font-size: 17px;
+}
+
+.header__content-item1 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    width: 23.33%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 20px 30px rgba(33, 37, 41, 0.08);
+}
+.header__content-parameter {
+    font-size: 24px;
+    font-weight: 500;
+    list-style: bold;
+}
+
+@media ( max-width: 1028px) {
+    .header__content {
+        display: block;
+        height:auto;
+    }
+    .header__content-column1,
+    .header__content-column2 {
+        width: 100%;
+    }
+}
+@media ( max-width: 738px ) {
+    .header__content-column2{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        
+    }
+    .header__content-item1 {
+        padding: 12px;
+        margin: 12px 0;
+        width: 100%;
+        height: auto;
+    }
+    .header__content-column2:nth-child(2) {
+        margin-top: 0px;
+    }
+    
+}

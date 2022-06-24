@@ -1,0 +1,40 @@
+<div class="grid">
+  <div class="container">
+    <div class="header">
+        <app-brand></app-brand>
+
+        <label for= "nav-mobile-input" class="header__menu-down">
+          <div class="menu-mobile">
+          <fa-icon [icon] = "faBars" ></fa-icon>
+          </div>
+        </label>
+        <input type="checkbox" name="" class="nav__input" id="nav-mobile-input">
+
+        <label for= "nav-mobile-input"class="nav__overlay"></label>
+
+       <div class="nav__mobile">
+          <label for= "nav-mobile-input">
+            <fa-icon [icon] = "faXmark" ></fa-icon>
+          </label>
+          <ul class="nav__mobile-list">
+            <li><a [routerLink]= "['/home']" class="nav__mobile-link"> Home </a></li>
+            <li><a [routerLink]= "['/about']" class="nav__mobile-link"> About Us </a></li>
+            <li><a [routerLink]="" class="nav__mobile-link">Service</a></li>
+            <li><a [routerLink]="" class="nav__mobile-link">Cases</a></li>
+            <li><a [routerLink]="" class="nav__mobile-link">Block</a></li>
+            <li><a [routerLink]="" class="nav__mobile-link">Training</a></li>
+          </ul>
+        </div>
+
+        <div class="header__listbar">
+            <app-list-bar></app-list-bar>
+        </div>
+    </div>
+    <div class="spacer-inner"></div>
+    <div class="spacer-inner"></div>
+    
+  </div>
+  <router-outlet></router-outlet>
+  <div class="spacer-inner"></div>
+  <app-footer></app-footer>
+</div>
